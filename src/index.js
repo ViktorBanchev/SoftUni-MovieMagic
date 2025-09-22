@@ -12,6 +12,10 @@ app.set('view engine', 'hbs');
 
 app.set('views', 'src/views');
 
+//setup middlewares
+app.use(express.static("src/public"));
+
+
 //routes
 app.get("/", (req, res) => {
     res.render('home', { layout: false })
