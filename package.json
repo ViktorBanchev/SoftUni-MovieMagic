@@ -1,0 +1,26 @@
+{
+  "name": "softuni-moviemagic",
+  "version": "1.0.0",
+  "description": "JS Back End course - Sep 2025",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViktorBanchev/SoftUni-MovieMagic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViktorBanchev/SoftUni-MovieMagic/issues"
+  },
+  "homepage": "https://github.com/ViktorBanchev/SoftUni-MovieMagic#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3"
+  }
+}
