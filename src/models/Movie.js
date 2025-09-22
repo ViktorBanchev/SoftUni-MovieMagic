@@ -31,17 +31,6 @@ const movies = [
       imageUrl: "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg",
       rating: 8.4,
       description: "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos actions and restore balance to the universe."
-    },
-    {
-      title: "The Case for Christ",
-      category: "movie",
-      genre: "Biography",
-      director: " Jon Gunn",
-      year: "2017",
-      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjcy-Q6F8E2JDeZzgHYaOWqMfbZeZzgUQS8A&s",
-      rating: 6.4,
-      description: "An investigative journalist and self-proclaimed atheist sets out to disprove the existence of God after his wife becomes a Christian.",
-      _id: "8555329f-0735-4956-9176-7ffb388c2443"
     }
   ]
 
