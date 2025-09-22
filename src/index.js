@@ -21,6 +21,10 @@ app.get("/", (req, res) => {
     res.render('home')
 })
 
+app.get("/about", (req, res) => {
+    res.render("about")
+})
+
 
 app.listen(5000, () => {
     console.log("Listening to http://localhost:5000")
