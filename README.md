@@ -17,3 +17,4 @@ JS Back End course - Sep 2025
     - [x] Create Movie model
 - [x] Fix own property handlebars problem with lean method;
 - [x] General fix for handlebars own property problem
+- [x] Refactor details/create/search 
