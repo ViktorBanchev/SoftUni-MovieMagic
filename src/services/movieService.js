@@ -29,8 +29,12 @@ export default {
     },
 
     async attach(movieId, castId) {
-        const movie = await Movie.findById(movieId);
-        movie.casts.push(castId);
-        return movie.save()
+        //---Add relations method #1
+        // const movie = await Movie.findById(movieId);
+        // movie.casts.push(castId);
+        // return movie.save();
+
+        // Add relation method #2 MongoDB
+        return Movie.findByIdAndUpdate(movieId, {$push: {casts: castId}});
     }
 }

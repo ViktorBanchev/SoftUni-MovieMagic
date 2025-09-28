@@ -32,7 +32,7 @@ JS Back End course - Sep 2025
 - [x] Add dynamic data to cast page
 - [x] Show cast list in Attach select
 - [x] Add reletions between cast and movie
-- [ ] Add attach cast functionallity
+- [x] Add attach cast functionallity
 
 
 ### Show Cast on Details
