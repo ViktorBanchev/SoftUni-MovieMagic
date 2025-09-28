@@ -26,6 +26,11 @@ export default {
         movieData.rating = Number(movieData.rating)
 
         return Movie.create(movieData)
+    },
 
+    async attach(movieId, castId) {
+        const movie = await Movie.findById(movieId);
+        movie.casts.push(castId);
+        return movie.save()
     }
 }
