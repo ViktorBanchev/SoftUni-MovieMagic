@@ -9,7 +9,7 @@ JS Back End course - Sep 2025
 
 - [x] add new resources
 - [x] install mongoose
-- [ ] connect to db
+- [x] connect to db
 
 ### refactor Movies to work with mongoose
 - [ ] Add Movie model
