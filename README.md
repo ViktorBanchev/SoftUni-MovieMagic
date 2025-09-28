@@ -24,7 +24,7 @@ JS Back End course - Sep 2025
 - [x] Create Cast Service
 - [x] Create Cast Controller
 - [x] Create Cast Page
-- [ ] Create Cast Functionallity
+- [x] Create Cast Functionallity
 
 
 ### Attach Cast to Movie
