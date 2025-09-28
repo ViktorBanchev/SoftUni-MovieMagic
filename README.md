@@ -28,7 +28,8 @@ JS Back End course - Sep 2025
 
 ### Attach Cast to Movie
 - [x] Add attach cast button
-- [ ] Add attach cast page
+- [x] Add attach cast page
+- [ ] Add dynamic data to cast page
 - [ ] Add reletions between cast and movie
 - [ ] Add attach cast functionallity
 
