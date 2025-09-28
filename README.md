@@ -34,5 +34,5 @@ JS Back End course - Sep 2025
 - [x] Add reletions between cast and movie
 - [x] Add attach cast functionallity
 
-
 ### Show Cast on Details
+- [x] Get Movie Casts filter
