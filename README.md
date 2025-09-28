@@ -23,7 +23,7 @@ JS Back End course - Sep 2025
 - [ ] Add cast model
 - [ ] Create Cast Service
 - [x] Create Cast Controller
-- [ ] Create Cast Page
+- [x] Create Cast Page
 - [ ] Create Cast Functionallity
 
 
