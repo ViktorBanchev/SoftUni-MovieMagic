@@ -15,4 +15,5 @@ JS Back End course - Sep 2025
 - [x] Add Movie model
     - [x] Create Movie schema
     - [x] Create Movie model
-- [] Refactor movieService
+- [x] Fix own property handlebars problem with lean method;
+- [x] General fix for handlebars own property problem
