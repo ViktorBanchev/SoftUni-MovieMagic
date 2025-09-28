@@ -18,3 +18,15 @@ JS Back End course - Sep 2025
 - [x] Fix own property handlebars problem with lean method;
 - [x] General fix for handlebars own property problem
 - [x] Refactor details/create/search 
+
+### Add Cast
+- [ ] Add cast model
+- [ ] Create Cast Service
+- [x] Create Cast Controller
+- [ ] Create Cast Page
+- [ ] Create Cast Functionallity
+
+
+### Attach Cast to Movie
+
+### Show Cast on Details
