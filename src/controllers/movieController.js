@@ -11,7 +11,7 @@ movieController.get("/create", (req, res) => {
 movieController.post("/create", async (req, res) => {
     const movieData = req.body;
     const movie = await movieService.create(movieData);
-    
+
 
     res.redirect("/");
 });
@@ -19,19 +19,19 @@ movieController.post("/create", async (req, res) => {
 movieController.get('/:movieId/details', async (req, res) => {
     const movieId = req.params.movieId;
     const movie = await movieService.getOne(movieId);
-    const movieCast = await castService.getAll({includes: movie.casts})
+    const movieCasts = await castService.getAll({ includes: movie.casts })
 
     //prepare view data (temp solution)
     const ratingViewData = '&#x2605;'.repeat(Math.trunc(movie.rating))
 
-    res.render("details", { movie, rating: ratingViewData })
+    res.render("details", { movie, rating: ratingViewData, casts: movieCasts })
 })
 
 movieController.get("/search", async (req, res) => {
     const filter = req.query;
-    
+
     const movies = await movieService.getAll(filter);
-    
+
     res.render("search", { movies, filter, pageTitle: "Search Movies" });
 });
 
@@ -49,7 +49,7 @@ movieController.post("/:movieId/attach", async (req, res) => {
 
     await movieService.attach(movieId, castId);
 
-    res.redirect(`/movie/${movieId}/details`)
+    res.redirect(`/movies/${movieId}/details`)
 })
 
 
