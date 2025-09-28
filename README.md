@@ -26,7 +26,11 @@ JS Back End course - Sep 2025
 - [x] Create Cast Page
 - [x] Create Cast Functionallity
 
-
 ### Attach Cast to Movie
+- [x] Add attach cast button
+- [ ] Add attach cast page
+- [ ] Add reletions between cast and movie
+- [ ] Add attach cast functionallity
+
 
 ### Show Cast on Details
