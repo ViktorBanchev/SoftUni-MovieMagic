@@ -20,8 +20,8 @@ JS Back End course - Sep 2025
 - [x] Refactor details/create/search 
 
 ### Add Cast
-- [ ] Add cast model
-- [ ] Create Cast Service
+- [x] Add cast model
+- [x] Create Cast Service
 - [x] Create Cast Controller
 - [x] Create Cast Page
 - [ ] Create Cast Functionallity
