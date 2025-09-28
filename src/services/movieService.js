@@ -5,7 +5,7 @@ export default {
         let query = Movie.find();
 
         if (filter.title) {
-            query = query.find({title: {$regex: filter.title, $options: 'i'}})
+            query = query.find({ title: { $regex: filter.title, $options: 'i' } })
         }
 
         if (filter.genre) {
@@ -19,7 +19,11 @@ export default {
     },
 
     getOne(movieId) {
-        return Movie.findById(movieId)
+        return Movie.findById(movieId);
+    },
+
+    getOneDetailed(movieId) {
+        return Movie.findById(movieId).populate('casts');
     },
 
     create(movieData) {
@@ -35,6 +39,6 @@ export default {
         // return movie.save();
 
         // Add relation method #2 MongoDB
-        return Movie.findByIdAndUpdate(movieId, {$push: {casts: castId}});
+        return Movie.findByIdAndUpdate(movieId, { $push: { casts: castId } });
     }
 }

@@ -36,4 +36,5 @@ JS Back End course - Sep 2025
 
 ### Show Cast on Details
 - [x] Get Movie Casts filtered
-- [ ] Show casts on details
+- [x] Show casts on details
+- [x] Get movie casts using population
