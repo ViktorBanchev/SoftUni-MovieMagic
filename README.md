@@ -12,6 +12,7 @@ JS Back End course - Sep 2025
 - [x] connect to db
 
 ### refactor Movies to work with mongoose
-- [ ] Add Movie model
+- [x] Add Movie model
     - [x] Create Movie schema
-    - [] Create Movie model
+    - [x] Create Movie model
+- [] Refactor movieService
