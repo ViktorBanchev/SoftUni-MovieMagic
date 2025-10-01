@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken"
 import { JWT_SECRET } from "../config/constants.js";
 
 export default function authMiddleware(req, res, next) {
-    const token = req.cookie['auth'];
+    const token = req.cookies['auth'];
 
     if (!token) {
         return next();
@@ -10,6 +10,8 @@ export default function authMiddleware(req, res, next) {
 
     try {
         const decodedtoken = jwt.verify(token, JWT_SECRET);
+
+        //attach user to request
         req.user = decodedtoken;
         req.isAuthenticated = true;
         // valid user
@@ -21,3 +23,19 @@ export default function authMiddleware(req, res, next) {
         res.redirect('/auth/login');
     }
 }
+
+export function isAuth(req, res, next) {
+    if (!req.isAuthenticated) {
+        return res.redirect("/auth/login")
+    }
+
+    next();
+}
+export function isGuest(req, res, next) {
+    if (req.isAuthenticated) {
+        return res.redirect("/")
+    }
+
+    next();
+}
+
