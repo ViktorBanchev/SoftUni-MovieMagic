@@ -74,6 +74,8 @@ JS Back End course - Sep 2025
 - [x] add route guard - isGuest
 
 ### Dynamic navigation
+- [x] Group Nav by User type
+- [x] Add auth info to handlebars context
 
 ### Edit movies
 
