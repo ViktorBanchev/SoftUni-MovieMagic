@@ -68,6 +68,9 @@ JS Back End course - Sep 2025
 - [x] Clear cookie
 
 ### Authorization
+- [ ] Add auth middleware
+- [ ] Validate user authentication
+- [ ]
 
 ### Dynamic navigation
 
