@@ -62,4 +62,20 @@ JS Back End course - Sep 2025
     - [x] Validate password
     - [x] Create token
     - [x] Return token to client
-- [ ] 
+
+### Logout
+- [x] Add logout action
+- [x] Clear cookie
+
+### Authorization
+
+### Dynamic navigation
+
+### Edit movies
+
+### Delete movies
+
+###Bonus
+- [ ] automatic login on register
+- [ ] invalidate token on logout
+- [ ] refresh token
