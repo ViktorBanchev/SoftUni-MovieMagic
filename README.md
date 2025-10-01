@@ -48,9 +48,9 @@ JS Back End course - Sep 2025
 - [x] Add packages
 
 ### Registration
-- [ ] Create userController
-- [ ] Add and render registration page
+- [x] Create authController
+- [x] Add and render registration page
 - [ ] Create userService
-- [ ] Create User model
+- [x] Create User model
 - [ ] Handle registration == Create user in database
 - [ ] Add password hashing
