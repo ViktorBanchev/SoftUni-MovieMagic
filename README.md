@@ -52,5 +52,5 @@ JS Back End course - Sep 2025
 - [x] Add and render registration page
 - [x] Create userService
 - [x] Create User model
-- [ ] Handle registration == Create user in database
+- [x] Handle registration == Create user in database
 - [ ] Add password hashing
