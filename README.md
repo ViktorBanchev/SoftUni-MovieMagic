@@ -54,3 +54,11 @@ JS Back End course - Sep 2025
 - [x] Create User model
 - [x] Handle registration == Create user in database
 - [x] Add password hashing
+
+### Login
+- [x] Add login page
+- [ ] Handle login
+- [ ] Validate user
+- [ ] Validate password
+- [ ] Create token
+- [ ] 
