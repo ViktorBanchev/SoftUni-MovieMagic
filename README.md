@@ -44,7 +44,13 @@ JS Back End course - Sep 2025
 ## Workshop 3 - Session and authentication
 
 ### Initial setup
-- [ ] Add resources
+- [x] Add resources
 - [x] Add packages
 
 ### Registration
+- [ ] Create userController
+- [ ] Add and render registration page
+- [ ] Create userService
+- [ ] Create User model
+- [ ] Handle registration == Create user in database
+- [ ] Add password hashing
