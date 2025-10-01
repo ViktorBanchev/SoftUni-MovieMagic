@@ -50,7 +50,7 @@ JS Back End course - Sep 2025
 ### Registration
 - [x] Create authController
 - [x] Add and render registration page
-- [ ] Create userService
+- [x] Create userService
 - [x] Create User model
 - [ ] Handle registration == Create user in database
 - [ ] Add password hashing
