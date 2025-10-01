@@ -9,7 +9,7 @@ movieController.get("/create", isAuth, (req, res) => {
     const token = req.cookies['auth'];
 
 
-    res.render("create")
+    res.render("movies/create")
 });
 
 movieController.post("/create", isAuth, async (req, res) => {
@@ -27,7 +27,7 @@ movieController.get('/:movieId/details', async (req, res) => {
     //prepare view data (temp solution)
     const ratingViewData = '&#x2605;'.repeat(Math.trunc(movie.rating))
 
-    res.render("details", { movie, rating: ratingViewData})
+    res.render("movies/details", { movie, rating: ratingViewData})
 })
 
 movieController.get("/search", async (req, res) => {

@@ -77,6 +77,10 @@ JS Back End course - Sep 2025
 - [x] Group Nav by User type
 - [x] Add auth info to handlebars context
 
+### Show creator control btns
+- [x] add edit and delete btns on details page
+- [ ] show btns only for creators
+
 ### Edit movies
 
 ### Delete movies
