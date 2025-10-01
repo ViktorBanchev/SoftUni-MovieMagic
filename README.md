@@ -40,3 +40,11 @@ JS Back End course - Sep 2025
 - [x] Get movie casts using population
 
 - [x] Filter already attached casts
+
+## Workshop 3 - Session and authentication
+
+### Initial setup
+- [ ] Add resources
+- [x] Add packages
+
+### Registration
