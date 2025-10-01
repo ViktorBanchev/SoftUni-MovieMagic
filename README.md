@@ -57,8 +57,9 @@ JS Back End course - Sep 2025
 
 ### Login
 - [x] Add login page
-- [ ] Handle login
-- [ ] Validate user
-- [ ] Validate password
-- [ ] Create token
+- [x] Handle login
+    - [x] Validate user
+    - [x] Validate password
+    - [x] Create token
+    - [x] Return token to client
 - [ ] 
