@@ -26,19 +26,15 @@ export default {
         return Movie.findById(movieId).populate('casts');
     },
 
-    create(movieData) {
-        movieData.rating = Number(movieData.rating)
-
-        return Movie.create(movieData)
+    create(movieData, userId) {
+        return Movie.create({
+            ...movieData,
+            rating: Number(movieData.rating),
+            creator: userId
+        })
     },
 
     async attach(movieId, castId) {
-        //---Add relations method #1
-        // const movie = await Movie.findById(movieId);
-        // movie.casts.push(castId);
-        // return movie.save();
-
-        // Add relation method #2 MongoDB
         return Movie.findByIdAndUpdate(movieId, { $push: { casts: castId } });
     }
 }

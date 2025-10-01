@@ -13,7 +13,7 @@ export default {
         }
 
         if (filter.excludes) {
-            query = query.nin(('_id', filter.excludes))
+            query = query.where('_id').nin((filter.excludes));
         }
 
         return query;

@@ -14,7 +14,8 @@ movieController.get("/create", isAuth, (req, res) => {
 
 movieController.post("/create", isAuth, async (req, res) => {
     const movieData = req.body;
-    const movie = await movieService.create(movieData);
+    const userId = req.user.id;
+    const movie = await movieService.create(movieData, userId);
 
 
     res.redirect("/");
@@ -24,10 +25,13 @@ movieController.get('/:movieId/details', async (req, res) => {
     const movieId = req.params.movieId;
     const movie = await movieService.getOneDetailed(movieId);
 
+    // const isCreator = req.user?.id && movie.creator == req.user.id
+    const isCreator = movie.creator && movie.creator.equals(req.user?.id)
+
     //prepare view data (temp solution)
     const ratingViewData = '&#x2605;'.repeat(Math.trunc(movie.rating))
 
-    res.render("movies/details", { movie, rating: ratingViewData})
+    res.render("movies/details", { movie, rating: ratingViewData, isCreator})
 })
 
 movieController.get("/search", async (req, res) => {

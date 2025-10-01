@@ -79,6 +79,8 @@ JS Back End course - Sep 2025
 
 ### Show creator control btns
 - [x] add edit and delete btns on details page
+- [x] add creator as relation to movies
+- [x] add user as creator on movie create
 - [ ] show btns only for creators
 
 ### Edit movies

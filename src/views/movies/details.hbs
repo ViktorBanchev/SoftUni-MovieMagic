@@ -24,12 +24,13 @@
 
             </div>
 
-            {{#if }}
+            {{#if isCreator}}
             <div class="details-btn">
                 <a href="/movies/{{movie.id}}/attach" class="details">Attach</a>
-                <a href="/movies/{{movie.id}}/edit" class="details" id="edit-button">Edit</a>
-                <a href="/movies/{{movie.id}}/delete" class="details" id="delete-button">Delete</a>
+                <a href="/movies/{{movie.id}}/edit" class="details">Edit</a>
+                <a href="/movies/{{movie.id}}/delete" class="details">Delete</a>
             </div>
+            {{/if}}
 
         </div>
         <div class="card_right">
@@ -37,8 +38,9 @@
         </div>
 
     </div>
-
+    
     <div class="main-cast-card">
+        
         {{#each movie.casts}}
         <div class="cast-card">
             <div class="card-img">

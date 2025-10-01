@@ -94,7 +94,8 @@
 }
 
 .social-btn > .edit-btn,
-.del-btn {
+.del-btn,
+.attach-btn {
   color: black;
   font-weight: bold;
   border: none;
@@ -119,9 +120,13 @@
 .edit-btn {
   background-color: #c6ac8f;
 }
+.attach-btn {
+  background-color: #c6ac8f;
+}
 
 .edit-btn:hover,
-.del-btn:hover {
+.del-btn:hover,
+.attach-btn:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
