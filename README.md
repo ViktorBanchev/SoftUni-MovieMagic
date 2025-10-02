@@ -88,7 +88,8 @@ JS Back End course - Sep 2025
 - [x] Add creator validation
 
 ### Edit movies
-
+- [x] Add edit page
+- [ ] Add dynamic movie data to edit page
 
 ###Bonus
 - [ ] automatic login on register
