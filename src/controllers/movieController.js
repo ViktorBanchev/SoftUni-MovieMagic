@@ -31,7 +31,7 @@ movieController.get('/:movieId/details', async (req, res) => {
     //prepare view data (temp solution)
     const ratingViewData = '&#x2605;'.repeat(Math.trunc(movie.rating))
 
-    res.render("movies/details", { movie, rating: ratingViewData, isCreator})
+    res.render("movies/details", { movie, rating: ratingViewData, isCreator })
 })
 
 movieController.get("/search", async (req, res) => {
@@ -45,19 +45,29 @@ movieController.get("/search", async (req, res) => {
 movieController.get("/:movieId/attach", async (req, res) => {
     const movieId = req.params.movieId;
     const movie = await movieService.getOne(movieId);
-    const casts = await castService.getAll({ excludes: movie.casts});
+    const casts = await castService.getAll({ excludes: movie.casts });
 
     res.render("casts/attach", { movie, casts })
 })
 
-movieController.post("/:movieId/attach", async (req, res) => {
+movieController.post("/:movieId/attach", isAuth, async (req, res) => {
     const movieId = req.params.movieId;
     const castId = req.body.cast;
 
     await movieService.attach(movieId, castId);
 
     res.redirect(`/movies/${movieId}/details`)
-})
+});
+
+movieController.get("/:movieId/delete", isAuth, async (req, res) => {
+    const movieId = req.params.movieId;
+
+    // TODO Check if creator
+
+    await movieService.delete(movieId);
+    res.redirect("/");
+
+});
 
 
 export default movieController;

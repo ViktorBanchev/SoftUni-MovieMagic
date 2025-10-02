@@ -81,11 +81,13 @@ JS Back End course - Sep 2025
 - [x] add edit and delete btns on details page
 - [x] add creator as relation to movies
 - [x] add user as creator on movie create
-- [ ] show btns only for creators
+- [x] show btns only for creators
+
+### Delete movies
+- [x] Add delete action
 
 ### Edit movies
 
-### Delete movies
 
 ###Bonus
 - [ ] automatic login on register
