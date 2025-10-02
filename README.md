@@ -85,6 +85,7 @@ JS Back End course - Sep 2025
 
 ### Delete movies
 - [x] Add delete action
+- [x] Add creator validation
 
 ### Edit movies
 
