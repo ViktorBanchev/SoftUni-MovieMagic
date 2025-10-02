@@ -93,6 +93,7 @@ JS Back End course - Sep 2025
 - [x] Handle movie edit
 
 ###Bonus
-- [ ] automatic login on register
+- [x] automatic login on register
+- [x] Edit categories
 - [ ] invalidate token on logout
 - [ ] refresh token
